@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Audio Bliss</title>
+</head>
+<body>
+    <div class="player-container">
+        <img src="media/1.jpg" alt="Audio Image" id="audio-image">
+        <audio id="audio" controls>
+            <source src="media/1.mp3" type="audio/mp3">
+        </audio>
+        <div class="controls">
+            <button class="play">Play</button>
+            <button class="pause">Pause</button>
+            <button class="mute"><i class="fas fa-volume-up"></i></button>
+            <button class="restart">Restart</button>
+        </div>
+        <input type="range" name="progress" id="range" />
+        <input type="range" name="volume" id="range2" min="0" max="1" step="0.01" />
+
+        <div class="track-selector">
+            <input type="radio" id="track1" name="track" value="media/1.mp3" data-image="media/1.jpg" checked>
+            <label for="track1">Super mario</label>
+            <input type="radio" id="track2" name="track" value="media/2.mp3" data-image="media/2.jpg">
+            <label for="track2">love you to find me</label>
+            <input type="radio" id="track3" name="track" value="media/3.mp3" data-image="media/3.jpg">
+            <label for="track3">Bad guy</label>
+            <input type="radio" id="track4" name="track" value="media/4.mp3" data-image="media/4.jpg">
+            <label for="track4">Mek bedaya</label>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
